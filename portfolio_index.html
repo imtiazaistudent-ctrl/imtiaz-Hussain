@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Imtiaz Hussain — Portfolio</title>
+  <meta name="description" content="Imtiaz Hussain — Aspiring Generative & Agentic AI Developer. Projects: LangChain pipelines, RAG systems, Deep Learning, NLP.">
+  <meta name="keywords" content="Imtiaz Hussain, AI Developer, Machine Learning, Deep Learning, LangChain, RAG, NLP, Portfolio">
+
+  <!-- Favicons -->
+<link href="1.png" rel="icon" type="image/png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+
+  <!-- Global Background Style -->
+  <style>
+    body {
+      background: linear-gradient(45deg, #000428 0%, #004e92 15%, #009ffd 30%, #00d2ff 45%, #3a7bd5 60%, #00d2ff 75%, #3a7bd5 90%, #000428 100%);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      background-attachment: fixed;
+      min-height: 100vh;
+    }
+    
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    /* Colorful overlay for all sections */
+    .section {
+      background: linear-gradient(135deg, rgba(0,4,40,0.85) 0%, rgba(0,78,146,0.7) 50%, rgba(58,123,213,0.85) 100%) !important;
+      backdrop-filter: blur(15px);
+      border-radius: 0;
+      border-top: 2px solid rgba(0,210,255,0.3);
+      border-bottom: 2px solid rgba(58,123,213,0.3);
+    }
+    
+    /* Text colors for dark theme */
+    .section h1, .section h2, .section h3, .section h4, .section h5, .section h6 {
+      color: white !important;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .section p, .section span, .section small, .section li {
+      color: rgba(255,255,255,0.95) !important;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    
+    /* Specific fixes for hidden content */
+    .edu-item h4, .cert-item h4, .award-item h4 {
+      color: white !important;
+    }
+    
+    .edu-item p, .cert-item p, .award-item p {
+      color: rgba(255,255,255,0.9) !important;
+    }
+    
+    .portfolio-info h4, .portfolio-info p {
+      color: white !important;
+    }
+    
+    .blog-post h3, .blog-post p, .blog-post .meta span {
+      color: white !important;
+    }
+    
+    .testimonial-item p, .testimonial-item h3, .testimonial-item h4 {
+      color: white !important;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+    
+    /* Testimonial specific styling */
+    .testimonial-item {
+      background: linear-gradient(135deg, rgba(0,4,40,0.9) 0%, rgba(0,78,146,0.7) 50%, rgba(58,123,213,0.9) 100%) !important;
+      backdrop-filter: blur(20px);
+      border: 2px solid rgba(0,210,255,0.4);
+      border-radius: 20px;
+      padding: 30px;
+    }
+    
+    .testimonial-item .stars i {
+      color: #ffc107 !important;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    
+    .testimonial-item .profile h3 {
+      color: #00d2ff !important;
+      font-weight: 600;
+    }
+    
+    .testimonial-item .profile h4 {
+      color: rgba(255,255,255,0.8) !important;
+      font-size: 0.9rem;
+    }
+    
+    .testimonial-img {
+      border: 3px solid rgba(0,210,255,0.5) !important;
+      border-radius: 50%;
+    }
+    
+    .service-item h3, .service-item p {
+      color: white !important;
+    }
+    
+    /* Contact section text */
+    .info-item h3, .info-item p {
+      color: white !important;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+    
+    .info-item p a {
+      color: #00d2ff !important;
+      text-decoration: none !important;
+      font-weight: 500;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+    }
+    
+    .info-item p a:hover {
+      color: #ffffff !important;
+      text-shadow: 0 0 10px rgba(0,210,255,0.8);
+    }
+    
+    /* Contact info items background */
+    .info-item {
+      background: linear-gradient(135deg, rgba(0,4,40,0.8) 0%, rgba(0,78,146,0.6) 50%, rgba(58,123,213,0.8) 100%) !important;
+      backdrop-filter: blur(15px);
+      border: 2px solid rgba(0,210,255,0.3);
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 20px;
+    }
+    
+    /* Stats text */
+    .stats-item span, .stats-item p {
+      color: white !important;
+    }
+    
+    /* Footer text */
+    .footer h4, .footer p, .footer li a {
+      color: rgba(255,255,255,0.9) !important;
+    }
+    
+    /* Card backgrounds */
+    .service-item, .testimonial-item, .blog-post, .portfolio-content {
+      background: linear-gradient(135deg, rgba(0,210,255,0.1) 0%, rgba(58,123,213,0.2) 50%, rgba(0,78,146,0.1) 100%) !important;
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(0,210,255,0.3);
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0,210,255,0.1);
+    }
+    
+    /* Stats section special styling */
+    .stats-item {
+      background: linear-gradient(45deg, rgba(0,78,146,0.2) 0%, rgba(58,123,213,0.3) 100%);
+      backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 25px;
+      border: 2px solid rgba(0,210,255,0.4);
+      box-shadow: 0 10px 30px rgba(0,210,255,0.2);
+    }
+    
+    /* Glowing effects */
+    .service-item:hover, .testimonial-item:hover {
+      border-color: rgba(0,210,255,0.6) !important;
+      box-shadow: 0 15px 40px rgba(0,210,255,0.3) !important;
+    }
+    
+    /* Button glow effects */
+    .btn {
+      background: linear-gradient(45deg, #004e92, #009ffd) !important;
+      border: none !important;
+      box-shadow: 0 5px 15px rgba(0,159,253,0.3);
+      color: white !important;
+    }
+    
+    .btn:hover {
+      box-shadow: 0 8px 25px rgba(0,159,253,0.5) !important;
+      color: white !important;
+    }
+    
+    /* Contact buttons specific styling */
+    .contact-options .btn {
+      background: linear-gradient(135deg, rgba(0,4,40,0.9) 0%, rgba(0,78,146,0.8) 50%, rgba(58,123,213,0.9) 100%) !important;
+      border: 2px solid rgba(0,210,255,0.4) !important;
+      backdrop-filter: blur(15px);
+      color: white !important;
+    }
+    
+    .contact-options .btn:hover {
+      background: linear-gradient(135deg, rgba(0,78,146,0.9) 0%, rgba(58,123,213,0.8) 50%, rgba(0,210,255,0.9) 100%) !important;
+      border-color: rgba(0,210,255,0.8) !important;
+      transform: translateY(-5px);
+    }
+    
+    .contact-options .btn i {
+      color: #00d2ff !important;
+    }
+    
+    .contact-options .btn span {
+      color: white !important;
+      font-weight: 500;
+    }
+  </style>
+
+  <!-- Custom Animations -->
+  <style>
+    /* Smooth hover effects for buttons */
+    .btn {
+      transition: all 0.3s ease;
+      transform: translateY(0);
+    }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Portfolio items hover effect */
+    .portfolio-item {
+      transition: transform 0.3s ease;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Service items hover effect */
+    .service-item {
+      transition: all 0.3s ease;
+      border-radius: 10px;
+      padding: 30px 20px;
+    }
+    .service-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+
+   #testimonials {
+  background: linear-gradient(135deg, rgba(0,4,40,0.9) 0%, rgba(0,78,146,0.7) 50%, rgba(58,123,213,0.9) 100%) !important;
+  backdrop-filter: blur(15px);
+  border-top: 2px solid rgba(0,210,255,0.3);
+  border-bottom: 2px solid rgba(58,123,213,0.3);
+}
+
+    /* Blog post hover effect */
+    .blog-post {
+      transition: all 0.3s ease;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .blog-post:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    /* Navigation smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Icon animations */
+    .service-item .icon i {
+      transition: all 0.3s ease;
+    }
+    .service-item:hover .icon i {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    /* Stats counter animation */
+    .stats-item {
+      transition: all 0.3s ease;
+    }
+    .stats-item:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Contact buttons pulse effect */
+    .contact-options .btn {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(0,123,255,0.4); }
+      70% { box-shadow: 0 0 0 10px rgba(0,123,255,0); }
+      100% { box-shadow: 0 0 0 0 rgba(0,123,255,0); }
+    }
+
+    /* Fade in animation for sections */
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+    .section.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Floating animation for AI icons */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Imtiaz Hussain</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn" href="#contact">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="hero-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center">
+        <h2 data-aos="fade-up" data-aos-delay="100">Aspiring Generative &amp; Agentic AI Developer</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Building AI-powered solutions with LangChain, RAG systems, NLP, and Deep Learning.</p>
+        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+          <a href="#about" class="btn-get-started">About Me</a>
+          <a href="#portfolio" class="btn-watch-video d-flex align-items-center"><i class="bi bi-grid-3x3-gap"></i><span>See Projects</span></a>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3>About Me</h3>
+           <img src="1.png" class="img-fluid rounded-4 mb-4" alt="Imtiaz Hussain" style="max-width:250px; height:auto;">
+            <p>
+              I'm <strong>Imtiaz Hussain</strong> from Faisalabad, Pakistan — an aspiring Generative &amp; Agentic AI Developer. I am actively learning and building AI systems focused on Machine Learning, Deep Learning, NLP, LangChain pipelines, and Retrieval-Augmented Generation (RAG). I am seeking an internship to apply my skills in real-world projects and to collaborate with experienced teams.
+            </p>
+            <p>
+              Through self-driven projects I have worked on churn modeling, ANN models, NLP applications, and integrated SQL databases with ML workflows. I enjoy solving problems, continuous learning, and building AI tools that deliver real value.
+            </p>
+            <div class="mt-4">
+              <a href="cv1.pdf" class="btn btn-outline-primary btn-lg d-inline-flex align-items-center" download>
+                <i class="bi bi-file-earmark-pdf me-2 fs-5"></i>
+                <span>Download Resume</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Key strengths: Problem-solving, teamwork, adaptability, and hands-on implementation of AI solutions.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Python, TensorFlow, PyTorch, Scikit-learn</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>LangChain &amp; RAG pipelines</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>NLP, Chatbots &amp; Text Classification</span></li>
+              </ul>
+
+              <div class="position-relative mt-4">
+                <img src="2.png" class="img-fluid rounded-4" alt="Working">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+<section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-emoji-smile flex-shrink-0" style="color: #ffc107; font-size: 3rem;"></i>
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>+
+            <p>Completed Projects</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-journal-richtext flex-shrink-0" style="color: #fd7e14; font-size: 3rem;"></i>
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>+
+            <p>Core Skills</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-headset flex-shrink-0" style="color: #28a745; font-size: 3rem;"></i>
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="2" class="purecounter"></span>+
+            <p>Hours of AI Practice</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="stats-item d-flex align-items-center w-100 h-100">
+          <i class="bi bi-people flex-shrink-0" style="color: #e83e8c; font-size: 3rem;"></i>
+          <div>
+            <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Open to Internship</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- /Stats Section -->
+
+
+    <!-- Skills Section -->
+<section id="skills" class="services section">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p>Core competencies and tools</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-5">
+
+      <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="service-item text-center">
+          <img src="A.png" alt="Machine Learning" class="img-fluid mb-3" style="width:80px; height:80px;">
+          <h3>Machine Learning &amp; Deep Learning</h3>
+          <p>Scikit-learn, TensorFlow, PyTorch — models for prediction and classification.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="service-item text-center">
+          <img src="B.png" alt="NLP & Chatbots" class="img-fluid mb-3" style="width:80px; height:80px;">
+          <h3>NLP &amp; Chatbots</h3>
+          <p>Text classification, conversational agents and chatbot pipelines.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="service-item text-center">
+          <img src="C.png" alt="LangChain & RAG" class="img-fluid mb-3" style="width:80px; height:80px;">
+          <h3>LangChain &amp; RAG</h3>
+          <p>Designing retrieval-augmented workflows and agentic pipelines using LangChain.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+        <div class="service-item text-center">
+          <img src="D.png" alt="Databases" class="img-fluid mb-3" style="width:80px; height:80px;">
+          <h3>Databases</h3>
+          <p>SQL database integration with AI and ML workflows.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+        <div class="service-item text-center">
+          <img src="E.png" alt="Data Visualization" class="img-fluid mb-3" style="width:80px; height:80px;">
+          <h3>Data Visualization</h3>
+          <p>Experience with Pandas, Matplotlib for analytics and insights.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+  <div class="service-item text-center">
+    <img src="F.png" alt="Python Programming" class="img-fluid mb-3" style="width:80px; height:80px;">
+    <h3>Python Programming</h3>
+    <p>Proficient in Python for AI/ML, data analysis, automation, and scripting.</p>
+  </div>
+</div>
+</section>
+<!-- /Skills Section -->
+
+    <!-- Education Section -->
+<section id="education" class="education section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Education</h2>
+    <p>Academic background</p>
+  </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+
+      <div class="col-lg-6">
+        <div class="edu-item d-flex align-items-start">
+          <i class="bi bi-mortarboard-fill me-3 fs-3 text-primary"></i>
+          <div>
+            <h4>F.A (Civics)</h4>
+            <p>Govt. Postgraduate College, Faisalabad (2023 – 2025)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="edu-item d-flex align-items-start">
+          <i class="bi bi-book-half me-3 fs-3 text-success"></i>
+          <div>
+            <h4>Matriculation</h4>
+            <p>Akhuwat First School, Faisalabad (2021 – 2023)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="edu-item d-flex align-items-start">
+          <i class="bi bi-laptop-fill me-3 fs-3 text-warning"></i>
+          <div>
+            <h4>Digital Literacy</h4>
+            <p>Akhuwat First School, Faisalabad (2024)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="edu-item d-flex align-items-start">
+          <i class="bi bi-cpu-fill me-3 fs-3 text-danger"></i>
+          <div>
+            <h4>Artificial Intelligence (Ongoing)</h4>
+            <p>Self-paced Online Learning</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /Education Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>What I can do for you</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item text-center">
+              <div class="icon">
+                <i class="bi bi-robot" style="font-size: 3rem; color: #007bff;"></i>
+              </div>
+              <h3>AI Model Development</h3>
+              <p>Custom machine learning and deep learning models for your business needs using TensorFlow, PyTorch, and Scikit-learn.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item text-center">
+              <div class="icon">
+                <i class="bi bi-chat-dots" style="font-size: 3rem; color: #28a745;"></i>
+              </div>
+              <h3>Chatbot Development</h3>
+              <p>Intelligent conversational agents and NLP-powered chatbots using LangChain and modern AI frameworks.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item text-center">
+              <div class="icon">
+                <i class="bi bi-search" style="font-size: 3rem; color: #ffc107;"></i>
+              </div>
+              <h3>RAG Systems</h3>
+              <p>Retrieval-Augmented Generation systems that combine your knowledge base with AI for accurate responses.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+            <div class="service-item text-center">
+              <div class="icon">
+                <i class="bi bi-bar-chart" style="font-size: 3rem; color: #dc3545;"></i>
+              </div>
+              <h3>Data Analysis</h3>
+              <p>Comprehensive data analysis, visualization, and insights using Python, Pandas, and modern analytics tools.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+            <div class="service-item text-center">
+              <div class="icon">
+                <i class="bi bi-gear" style="font-size: 3rem; color: #6f42c1;"></i>
+              </div>
+              <h3>ML Pipeline Automation</h3>
+              <p>End-to-end machine learning pipelines with automated training, testing, and deployment workflows.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+            <div class="service-item text-center">
+              <div class="icon">
+                <i class="bi bi-lightbulb" style="font-size: 3rem; color: #fd7e14;"></i>
+              </div>
+              <h3>AI Consulting</h3>
+              <p>Strategic guidance on AI implementation, technology selection, and best practices for your projects.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Certifications & Awards Section -->
+    <section id="certifications" class="certifications section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); position: relative; overflow: hidden;">
+
+      <!-- AI Background Pattern -->
+      
+      <!-- Floating AI Icons -->
+      <div style="position: absolute; top: 20%; left: 10%; animation: float 6s ease-in-out infinite; z-index: 1;">
+        <i class="bi bi-robot" style="font-size: 3rem; color: rgba(255,255,255,0.1);"></i>
+      </div>
+      <div style="position: absolute; top: 60%; right: 15%; animation: float 8s ease-in-out infinite reverse; z-index: 1;">
+        <i class="bi bi-cpu" style="font-size: 2.5rem; color: rgba(255,255,255,0.1);"></i>
+      </div>
+
+      <div class="container section-title" data-aos="fade-up" style="position: relative; z-index: 2;">
+        <h2 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Certifications & Awards</h2>
+        <p style="color: rgba(255,255,255,0.9); text-shadow: 1px 1px 2px rgba(0,0,0,0.6);">Professional achievements and recognitions</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- Certifications -->
+          <div class="col-lg-6">
+            <h3 class="mb-4" style="color: white;"><i class="bi bi-award text-warning me-2"></i>Certifications</h3>
+            
+            <div class="cert-item d-flex align-items-start mb-4" data-aos="fade-right" data-aos-delay="200">
+              <div class="cert-icon me-3">
+                <i class="bi bi-patch-check-fill text-success fs-3"></i>
+              </div>
+              <div>
+                <h4 style="color: white;">Building AI Browser Agents</h4>
+                <p class="mb-1" style="color: rgba(255,255,255,0.8);">DeepLearning.AI</p>
+                <small style="color: rgba(255,255,255,0.7);">Expected: September 2025</small>
+              </div>
+            </div>
+
+            <div class="cert-item d-flex align-items-start mb-4" data-aos="fade-right" data-aos-delay="300">
+              <div class="cert-icon me-3">
+                <i class="bi bi-patch-check-fill text-success fs-3"></i>
+              </div>
+              <div>
+                <h4 style="color: white;">Digital Literacy Certificate</h4>
+                <p class="mb-1" style="color: rgba(255,255,255,0.8);">Akhuwat First School, Faisalabad</p>
+                <small style="color: rgba(255,255,255,0.7);">Completed: 2024</small>
+              </div>
+            </div>
+
+            <div class="cert-item d-flex align-items-start mb-4" data-aos="fade-right" data-aos-delay="400">
+              <div class="cert-icon me-3">
+                <i class="bi bi-patch-check-fill text-warning fs-3"></i>
+              </div>
+              <div>
+                <h4 style="color: white;">Machine Learning Fundamentals</h4>
+                <p class="mb-1" style="color: rgba(255,255,255,0.8);">Self-Paced Online Learning</p>
+                <small style="color: rgba(255,255,255,0.7);">Ongoing</small>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Awards -->
+          <div class="col-lg-6">
+            <h3 class="mb-4" style="color: white;"><i class="bi bi-trophy text-warning me-2"></i>Awards & Recognition</h3>
+            
+            <div class="award-item d-flex align-items-start mb-4" data-aos="fade-left" data-aos-delay="200">
+              <div class="award-icon me-3">
+                <i class="bi bi-trophy-fill text-warning fs-3"></i>
+              </div>
+              <div>
+                <h4 style="color: white;">Best AI Project</h4>
+                <p class="mb-1" style="color: rgba(255,255,255,0.8);">College Level Competition</p>
+                <small style="color: rgba(255,255,255,0.7);">RAG System Implementation - 2024</small>
+              </div>
+            </div>
+
+            <div class="award-item d-flex align-items-start mb-4" data-aos="fade-left" data-aos-delay="300">
+              <div class="award-icon me-3">
+                <i class="bi bi-star-fill text-primary fs-3"></i>
+              </div>
+              <div>
+                <h4 style="color: white;">Outstanding Student</h4>
+                <p class="mb-1" style="color: rgba(255,255,255,0.8);">Programming Excellence</p>
+                <small style="color: rgba(255,255,255,0.7);">Python & ML Projects - 2024</small>
+              </div>
+            </div>
+
+            <div class="award-item d-flex align-items-start mb-4" data-aos="fade-left" data-aos-delay="400">
+              <div class="award-icon me-3">
+                <i class="bi bi-gem text-info fs-3"></i>
+              </div>
+              <div>
+                <h4 style="color: white;">Innovation Award</h4>
+                <p class="mb-1" style="color: rgba(255,255,255,0.8);">Creative Problem Solving</p>
+                <small style="color: rgba(255,255,255,0.7);">NLP Chatbot Development - 2024</small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Certifications & Awards Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>Selected projects and experiments</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-content h-100">
+              <img src="cHURN modeling.png" class="img-fluid" alt="Customer Churn Prediction Model">
+              <div class="portfolio-info">
+                <h4>Customer Churn Prediction Model</h4>
+                <p>ML model to predict customer retention and reduce churn rates using advanced algorithms.</p>
+                <div class="portfolio-links" style="display: flex; gap: 10px; margin-top: 15px;">
+                  <a href="img/portfolio/cHURN modeling.png" class="glightbox" title="Customer Churn Prediction Model" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-zoom-in"></i> View
+                  </a>
+                  <a href="https://churn-modeling-jii4eienjp9hrwmpysomly.streamlit.app/" target="_blank" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-play-circle"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+            <div class="portfolio-content h-100">
+              <img src="cHAT bOT.png" class="img-fluid" alt="AI Chatbot with LangChain">
+              <div class="portfolio-info">
+                <h4>AI Chatbot with LangChain</h4>
+                <p>Intelligent conversational AI using LangChain framework with advanced NLP capabilities.</p>
+                <div class="portfolio-links" style="display: flex; gap: 10px; margin-top: 15px;">
+                  <a href="img/portfolio/cHAT bOT.png" class="glightbox" title="AI Chatbot with LangChain" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-zoom-in"></i> View
+                  </a>
+                  <a href="https://langchain-magzewxxyz7pdqbvags9n5.streamlit.app/" target="_blank" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-play-circle"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+            <div class="portfolio-content h-100">
+              <img src="ANN.png" class="img-fluid" alt="Artificial Neural Network Builder">
+              <div class="portfolio-info">
+                <h4>Artificial Neural Network Builder</h4>
+                <p>Interactive ANN model builder with customizable layers and real-time training visualization.</p>
+                <div class="portfolio-links" style="display: flex; gap: 10px; margin-top: 15px;">
+                  <a href="img/portfolio/ANN.png" class="glightbox" title="Artificial Neural Network Builder" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-zoom-in"></i> View
+                  </a>
+                  <a href="https://ann-model-hvkpcshyvapppmls5y6qjhb.streamlit.app/" target="_blank" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-play-circle"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-books">
+            <div class="portfolio-content h-100">
+              <img src="NLP.png" class="img-fluid" alt="Natural Language Processing Suite">
+              <div class="portfolio-info">
+                <h4>Natural Language Processing Suite</h4>
+                <p>Comprehensive NLP toolkit with sentiment analysis, text classification, and language detection.</p>
+                <div class="portfolio-links" style="display: flex; gap: 10px; margin-top: 15px;">
+                  <a href="img/portfolio/NLP.png" class="glightbox" title="Natural Language Processing Suite" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-zoom-in"></i> View
+                  </a>
+                  <a href="https://nlp-application-wrahm4thgmsqgrhusasvrh.streamlit.app/" target="_blank" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-play-circle"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-content h-100">
+              <img src="Deep Learning.png" class="img-fluid" alt="Deep Learning Model Hub">
+              <div class="portfolio-info">
+                <h4>Deep Learning Model Hub</h4>
+                <p>Advanced CNN and RNN models for image recognition, time series prediction, and pattern analysis.</p>
+                <div class="portfolio-links" style="display: flex; gap: 10px; margin-top: 15px;">
+                  <a href="img/portfolio/Deep Learning.png" class="glightbox" title="Deep Learning Model Hub" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-zoom-in"></i> View
+                  </a>
+                  <a href="https://deep-learning-4gderhntxfzmyjz6pv3nuf.streamlit.app/" target="_blank" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-play-circle"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
+            <div class="portfolio-content h-100">
+              <img src="SQL Data Base.png" class="img-fluid" alt="Smart Database Analytics">
+              <div class="portfolio-info">
+                <h4>Smart Database Analytics</h4>
+                <p>Intelligent SQL database integration with machine learning for automated data insights and predictions.</p>
+                <div class="portfolio-links" style="display: flex; gap: 10px; margin-top: 15px;">
+                  <a href="img/portfolio/SQL Data Base.png" class="glightbox" title="Smart Database Analytics" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-zoom-in"></i> View
+                  </a>
+                  <a href="https://machine-learning-7jhnosjfwwaq25dcr6v6gt.streamlit.app/" target="_blank" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-play-circle"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-branding">
+            <div class="portfolio-content h-100">
+              <img src="Rag.png" class="img-fluid" alt="Intelligent Knowledge Assistant">
+              <div class="portfolio-info">
+                <h4>Intelligent Knowledge Assistant</h4>
+                <p>RAG-powered AI system that combines document retrieval with large language models for accurate responses.</p>
+                <div class="portfolio-links" style="display: flex; gap: 10px; margin-top: 15px;">
+                  <a href="img/portfolio/Rag.png" class="glightbox" title="Intelligent Knowledge Assistant" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-zoom-in"></i> View
+                  </a>
+                  <a href="https://i94r7sluvz56je7ypsy6m6.streamlit.app/" target="_blank" style="background: linear-gradient(45deg, #004e92, #009ffd); color: white; padding: 8px 15px; border-radius: 25px; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 5px;">
+                    <i class="bi bi-play-circle"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- End Portfolio Container -->
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Feedback from my respected mentors and teachers:</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+
+          <!-- Ali Hamza -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="testimonial-item">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p>"Imtiaz shows great consistency, logic, and passion for machine learning. A bright future awaits him."</p>
+              <div class="profile mt-auto">
+                <img src="IMG.2.png" class="testimonial-img" alt="">
+                <h3>Ali Hamza</h3>
+                <h4>Lecturer & Founder, Tecrix Software House</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shazeb Malik -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-item">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p>"His grasp of deep learning and NLP is outstanding. Imtiaz is a highly promising AI researcher."</p>
+              <div class="profile mt-auto">
+                <img src="IMG.4.jpeg" class="testimonial-img" alt="">
+                <h3>Shazeb Malik</h3>
+                <h4>AI Research Supervisor</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Uzair Arshad -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="450">
+            <div class="testimonial-item">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p>"Imtiaz combines technical expertise with creativity. His data science projects are truly impressive."</p>
+              <div class="profile mt-auto">
+                <img src="IMG.1.png" class="testimonial-img" alt="">
+                <h3>Uzair Arshad</h3>
+                <h4>Top Rated Freelancer on Fiverr</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Farman Ullah -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="testimonial-item">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p>"Dedicated and skilled in Python and ML frameworks. Imtiaz delivers with focus and determination."</p>
+              <div class="profile mt-auto">
+                <img src="IMG.3.png" class="testimonial-img" alt="">
+                <h3>Farman Ullah</h3>
+                <h4>S.E.O Expert</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Testimonials Section -->
+    <!-- Blog Section -->
+    <section id="blog" class="blog section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Blog</h2>
+        <p>Latest insights and articles on AI, Machine Learning, and Data Science</p>
+      </div>
+
+      <div class="container">
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-post">
+              <div class="post-img">
+                <img src="img/blog/blog-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="post-content">
+                <h3><a href="javascript:void(0)">Understanding Neural Networks: A Beginner's Guide</a></h3>
+                <div class="meta">
+                  <span class="date">Dec 15, 2024</span>
+                  <span class="category">Machine Learning</span>
+                </div>
+                <p>Explore the fundamentals of neural networks and how they power modern AI applications...</p>
+                <a href="javascript:void(0)" class="read-more" onclick="alert('Blog post coming soon!')">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-post">
+              <div class="post-img">
+                <img src="img/blog/blog-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="post-content">
+                <h3><a href="javascript:void(0)">LangChain vs Traditional NLP: Which to Choose?</a></h3>
+                <div class="meta">
+                  <span class="date">Dec 10, 2024</span>
+                  <span class="category">NLP</span>
+                </div>
+                <p>Compare modern LangChain frameworks with traditional NLP approaches for your next project...</p>
+                <a href="javascript:void(0)" class="read-more" onclick="alert('Blog post coming soon!')">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="blog-post">
+              <div class="post-img">
+                <img src="img/blog/blog-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="post-content">
+                <h3><a href="javascript:void(0)">Building RAG Systems: Best Practices</a></h3>
+                <div class="meta">
+                  <span class="date">Dec 5, 2024</span>
+                  <span class="category">AI</span>
+                </div>
+                <p>Learn how to implement effective Retrieval-Augmented Generation systems for better AI responses...</p>
+                <a href="javascript:void(0)" class="read-more" onclick="alert('Blog post coming soon!')">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Blog Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Get in touch</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 ">
+            <div class="row gy-4">
+
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt" style="font-size: 2.5rem; color: #00d2ff; margin-bottom: 15px;"></i>
+                  <h3>Address</h3>
+                  <p><a href="https://maps.google.com/maps?q=Faisalabad,+Punjab,+Pakistan" target="_blank">Faisalabad, Punjab, Pakistan</a></p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone" style="font-size: 2.5rem; color: #00d2ff; margin-bottom: 15px;"></i>
+                  <h3>Call Me</h3>
+                  <p><a href="https://wa.me/923006557250" target="_blank">+92 300 6557250</a></p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope" style="font-size: 2.5rem; color: #00d2ff; margin-bottom: 15px;"></i>
+                  <h3>Email</h3>
+                  <p><a href="mailto:imtiazhussain2500@gmail.com">imtiazhussain2500@gmail.com</a></p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-options" data-aos="fade-up" data-aos-delay="500">
+              <div class="row gy-3">
+                
+                <div class="col-md-12 text-center mb-3">
+                  <h4>Get in Touch</h4>
+                  <p>Choose your preferred way to contact me:</p>
+                </div>
+
+                <div class="col-md-4">
+                  <a href="mailto:imtiazhussain2500@gmail.com" class="btn w-100 d-flex flex-column align-items-center py-3">
+                    <i class="bi bi-envelope fs-2 mb-2"></i>
+                    <span>Send Email</span>
+                  </a>
+                </div>
+
+                <div class="col-md-4">
+                  <a href="https://wa.me/923006557250" target="_blank" class="btn w-100 d-flex flex-column align-items-center py-3">
+                    <i class="bi bi-whatsapp fs-2 mb-2"></i>
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
+
+                <div class="col-md-4">
+                  <a href="tel:+923006557250" class="btn w-100 d-flex flex-column align-items-center py-3">
+                    <i class="bi bi-telephone fs-2 mb-2"></i>
+                    <span>Call Now</span>
+                  </a>
+                </div>
+
+                <div class="col-md-4">
+                  <a href="https://www.facebook.com/S2Gimtiazv4" target="_blank" class="btn btn-primary w-100 d-flex flex-column align-items-center py-3">
+                    <i class="bi bi-facebook fs-2 mb-2"></i>
+                    <span>Facebook</span>
+                  </a>
+                </div>
+
+                <div class="col-md-4">
+                  <a href="https://linkedin.com/" target="_blank" class="btn btn-info w-100 d-flex flex-column align-items-center py-3">
+                    <i class="bi bi-linkedin fs-2 mb-2"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+
+                <div class="col-md-4">
+                  <a href="https://instagram.com/" target="_blank" class="btn btn-warning w-100 d-flex flex-column align-items-center py-3">
+                    <i class="bi bi-instagram fs-2 mb-2"></i>
+                    <span>Instagram</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div><!-- End Contact Options -->
+
+        </div>
+
+      </div>
+
+   </section><!-- /Contact Section -->
+
+</main>
+
+<footer id="footer" class="footer dark-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">Imtiaz Hussain</span>
+        </a>
+
+
+
+
+ <div class="container text-center mt-4">
+  <p>© <span>Copyright</span> 
+    <strong class="px-1 sitename">Imtiaz Hussain</strong> 
+    <span>All Rights Reserved</span>
+  </p>
+  <div class="credits">
+    Designed by <span style="font-weight:600;">Imtiaz Hussain</span>
+  </div>
+</div>
+
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+<!-- Main JS File -->
+<script src="main.js"></script>
+
+<!-- Custom Animation Script -->
+<script>
+  // Animate sections on scroll
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      }
+    });
+  }, observerOptions);
+
+  // Observe all sections
+  document.querySelectorAll('.section').forEach(section => {
+    observer.observe(section);
+  });
+
+  // Smooth scroll for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Add loading animation
+  window.addEventListener('load', () => {
+    document.body.style.opacity = '0';
+    document.body.style.transition = 'opacity 0.5s ease';
+    setTimeout(() => {
+      document.body.style.opacity = '1';
+    }, 100);
+  });
+</script>
+
+<style>
+/* Footer Fix */
+.footer .copyright {
+  text-align: center !important;
+}
+.footer .credits {
+  text-align: center !important;
+  margin-top: 5px;
+}
+
+/* Stylish Blog Section */
+.blog-post {
+  background: linear-gradient(135deg, rgba(0,210,255,0.1) 0%, rgba(58,123,213,0.2) 50%, rgba(0,78,146,0.1) 100%) !important;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(0,210,255,0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,210,255,0.2);
+  transition: all 0.4s ease;
+  position: relative;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-post:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0,210,255,0.4);
+  border-color: rgba(0,210,255,0.6);
+}
+.blog-post .post-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  height: 200px;
+  flex-shrink: 0;
+}
+.blog-post .post-img img {
+  transition: all 0.4s ease;
+  filter: brightness(0.8);
+}
+.blog-post:hover .post-img img {
+  transform: scale(1.1);
+  filter: brightness(1);
+}
+.blog-post .post-content {
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(0,4,40,0.9) 0%, rgba(0,78,146,0.7) 50%, rgba(58,123,213,0.9) 100%);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog-post h3 {
+  color: white !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+}
+.blog-post h3 a {
+  color: white !important;
+  text-decoration: none;
+}
+.blog-post:hover h3 {
+  color: #00d2ff !important;
+  text-shadow: 0 0 15px rgba(0,210,255,0.8);
+}
+.blog-post .meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+.blog-post .meta .date {
+  background: linear-gradient(45deg, #004e92, #009ffd);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,159,253,0.3);
+}
+.blog-post .meta .category {
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(255,107,53,0.3);
+}
+.blog-post p {
+  color: rgba(255,255,255,0.9) !important;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  font-size: 0.9rem;
+}
+.blog-post .read-more {
+  background: linear-gradient(45deg, #28a745, #20c997);
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(40,167,69,0.3);
+  font-size: 0.85rem;
+}
+.blog-post .read-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40,167,69,0.5);
+  background: linear-gradient(45deg, #20c997, #28a745);
+  color: white !important;
+}
+.blog-post .read-more i {
+  transition: all 0.3s ease;
+}
+.blog-post:hover .read-more i {
+  transform: translateX(5px);
+}
+/* Blog section title styling */
+#blog .section-title h2 {
+  background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-shadow: none;
+}
+#blog .section-title p {
+  color: rgba(255,255,255,0.9) !important;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+</style>
